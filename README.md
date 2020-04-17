@@ -4,7 +4,9 @@ This is an academic certification DApp based on the [ERC725(v1) and ERC735 stand
 
 ## Description
 
-The DApp allows the academic institution to emit claims to the students representing their degrees. The students can accept or reject those claims and any external party who trusts the academic institution can certify a claim holded by a student.
+The DApp allows the academic institution to emit claims to the students representing their degrees. The students can accept or reject those claims and any external party who trusts the academic institution can certify a claim holded by a student.  
+
+![Sequence diagram](./screenshots/diagrama_secuencia.png)  
 
 ## Getting Started
 
@@ -32,7 +34,9 @@ var contrato_empresa = "<address of ClaimVerifier instance that represents the e
 * The button ADDKEY_UNI adds a new claim signer key (CLAIM_SIGNER_KEY=3) to the academic institution. It's always a good idea to link a new address for each purpose and Ganache CLI provides us with a bunch of unused accounts to choose from.
 * The button AÑADIR adds the provided claim to the student ClaimHolder instance from the academic institution ClaimHolder instance. The claim type 5 is proposed as a standard for university degree in this DApp. This claim will be added to the student ClaimHolder instance via the proxy that the ERC725 standard implements and it will wait there for its approval.
 * The button APPROVAL_UNIALUMNO approves the added claim.
-* Finally, the button VERIFIER_UNIALUMNO verifies from the ClaimVerifier instance that the student holds the given claim type.
+* Finally, the button VERIFIER_UNIALUMNO verifies from the ClaimVerifier instance that the student holds the given claim type.  
+
+![DApp screenshot](./screenshots/dapp_screenshot.png)  
 
 ## Acknowledgments
 
